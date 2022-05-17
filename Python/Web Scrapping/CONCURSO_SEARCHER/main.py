@@ -151,6 +151,8 @@ except NoSuchElementException:
 
     tabela_completa = pd.DataFrame(table)
     tabela_completa.to_excel(os.path.join(directory, file_name))
+
+print('File saved in', os.path.join(directory, file_name))
 driver.close()
 sys.exit()
 
